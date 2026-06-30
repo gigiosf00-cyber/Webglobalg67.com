@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBMARKET | Vitrine Dinâmica</title>
+    <title>WEBMARKET | Busca Dinâmica</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background-color: #f5f5f5; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; flex-direction: column; }
+        body { background-color: #f5f5f5; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; flex-direction: column; margin: 0; }
         .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 90%; max-width: 400px; }
         h1 { font-weight: 800; font-size: 24px; margin-bottom: 20px; }
         span { color: #ee4d2d; }
@@ -35,16 +35,16 @@
 </div>
 
 <script>
-    let produtos = {};
-
-    // Carrega os dados externos automaticamente
-    fetch('produtos.json')
-        .then(response => response.json())
-        .then(data => {
-            produtos = data;
-            console.log("Banco de dados carregado com sucesso.");
-        })
-        .catch(err => console.error("Erro ao carregar banco de dados:", err));
+    /* 
+       === ÁREA DE DADOS ===
+       Adicione seus produtos aqui no formato "código": "link", 
+       sempre mantendo a vírgula entre as linhas.
+    */
+    const produtos = {
+        "s1": "https://s.shopee.com.br/70HpDRKLTD",
+        "s2": "https://s.shopee.com.br/9fIaQg9Mq8",
+        "s3": "https://s.shopee.com.br/W4LW7RzHZ"
+    };
 
     function buscarProduto() {
         let codigo = document.getElementById("codigoBusca").value.trim().toLowerCase();
