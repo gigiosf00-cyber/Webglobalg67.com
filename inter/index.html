@@ -1,9 +1,9 @@
-⁸<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebGlobalG67 - Internacional</title>
+    <title>WebGlobalG67 - International</title>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 15px; color: #333; }
         .header-logo { text-align: center; font-size: 26px; font-weight: 900; margin-bottom: 20px; text-transform: uppercase; }
@@ -26,16 +26,17 @@
 </head>
 <body>
 
-    <!-- Logo arrumado com o G -->
+    <!-- Logo com o G -->
     <div class="header-logo">WEBGLOBALG<span>67</span></div>
 
+    <!-- Barra de busca toda em inglês -->
     <div class="search-container">
         <input type="text" id="searchInput" class="search-input" placeholder="CODE (EX: US01)">
         <button class="search-btn">GO</button>
     </div>
 
+    <!-- Filtros de países com as siglas internacionais corretas -->
     <div class="country-filters">
-        <!-- Removido o botão TODOS. Nenhum começa "active" -->
         <button class="filter-btn" data-country="us">🇺🇸 USA</button>
         <button class="filter-btn" data-country="de">🇩🇪 GER</button>
         <button class="filter-btn" data-country="es">🇪🇸 SPA</button>
@@ -43,26 +44,28 @@
 
     <div class="product-grid" id="productGrid">
         
-        <!-- Produtos começam com a classe 'hidden' para não aparecerem na tela inicial -->
+        <!-- Produto EUA Traduzido -->
         <div class="product-card hidden" data-code="US01" data-country="us">
-            <img src="https://via.placeholder.com/300x300?text=Foto+Ar+EUA" alt="Produto" class="product-img">
+            <img src="https://via.placeholder.com/300x300?text=US+Air+Cond" alt="Product" class="product-img">
             <div class="product-code">#US01</div>
-            <div class="product-title">Ar Condicionado Portátil 10.000 BTU - Estoque Local</div>
-            <a href="#" target="_blank" class="buy-btn">COMPRAR NO EBAY</a>
+            <div class="product-title">Portable Air Conditioner 10,000 BTU - Local Stock</div>
+            <a href="#" target="_blank" class="buy-btn">BUY ON EBAY</a>
         </div>
 
+        <!-- Produto Alemanha Traduzido -->
         <div class="product-card hidden" data-code="DE01" data-country="de">
-            <img src="https://via.placeholder.com/300x300?text=Foto+Vent+ALE" alt="Produto" class="product-img">
+            <img src="https://via.placeholder.com/300x300?text=GER+Neck+Fan" alt="Product" class="product-img">
             <div class="product-code">#DE01</div>
-            <div class="product-title">Ventilador de Pescoço USB 5000mAh - Entrega Rápida</div>
-            <a href="#" target="_blank" class="buy-btn">COMPRAR NO EBAY</a>
+            <div class="product-title">USB Neck Fan 5000mAh - Fast Delivery</div>
+            <a href="#" target="_blank" class="buy-btn">BUY ON EBAY</a>
         </div>
 
+        <!-- Produto Espanha Traduzido -->
         <div class="product-card hidden" data-code="ES01" data-country="es">
-            <img src="https://via.placeholder.com/300x300?text=Foto+Manta+ESP" alt="Produto" class="product-img">
+            <img src="https://via.placeholder.com/300x300?text=SPA+Blanket" alt="Product" class="product-img">
             <div class="product-code">#ES01</div>
-            <div class="product-title">Manta Refrescante de Bambu Casal - Verão</div>
-            <a href="#" target="_blank" class="buy-btn">COMPRAR NO EBAY</a>
+            <div class="product-title">Bamboo Cooling Blanket Double - Summer</div>
+            <a href="#" target="_blank" class="buy-btn">BUY ON EBAY</a>
         </div>
 
     </div>
@@ -96,13 +99,11 @@
             });
         }
 
-        // Digitar na busca apaga as bandeiras selecionadas
         searchInput.addEventListener('input', function() {
             filterBtns.forEach(b => b.classList.remove('active'));
             filterProducts();
         });
 
-        // Clicar na bandeira apaga o texto da busca
         filterBtns.forEach(btn => {
             btn.addEventListener('click', function() {
                 searchInput.value = ''; 
@@ -112,7 +113,9 @@
             });
         });
     </script>
-            <div style="text-align: center; padding: 20px; font-size: 13px; margin-top: 20px;">
+
+    <!-- Rodapé com os links oficiais das Políticas -->
+    <div style="text-align: center; padding: 20px; font-size: 13px; margin-top: 20px;">
         <a href="privacy.html" style="color: #888; text-decoration: none; font-weight: bold;">Privacy Policy</a>
         <span style="color: #ccc; margin: 0 10px;">|</span>
         <a href="terms.html" style="color: #888; text-decoration: none; font-weight: bold;">Terms of Service</a>
