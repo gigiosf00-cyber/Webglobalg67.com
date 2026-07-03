@@ -3,58 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBMARKET | Busca Dinâmica</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>WebGlobal67</title>
     <style>
-        body { background-color: #f5f5f5; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; flex-direction: column; margin: 0; }
-        .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 90%; max-width: 400px; }
-        h1 { font-weight: 800; font-size: 24px; margin-bottom: 20px; }
-        span { color: #ee4d2d; }
-        .search-box { margin-bottom: 25px; display: flex; gap: 5px; }
-        .search-box input { padding: 12px; border: 2px solid #ddd; border-radius: 8px; flex: 1; font-weight: 700; text-transform: uppercase; }
-        .search-box button { padding: 10px 20px; background: #333; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 800; }
-        .links-grid { display: flex; flex-direction: column; gap: 15px; }
-        .btn { text-decoration: none; padding: 15px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; transition: transform 0.2s; }
-        .btn:hover { transform: translateY(-3px); }
-        .shopee { background-color: #ee4d2d; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 90vh; }
+        .header-logo { font-size: 32px; font-weight: 900; margin-bottom: 40px; text-transform: uppercase; color: #333; }
+        .header-logo span { color: #ff5722; }
+        .nav-btn { width: 100%; max-width: 350px; padding: 18px; border-radius: 10px; font-weight: bold; text-align: center; text-decoration: none; display: block; margin-bottom: 20px; font-size: 18px; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-br { background-color: #00b894; }
+        .btn-inter { background-color: #0984e3; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>WEBMARKET<span>67</span></h1>
-    
-    <div class="search-box">
-        <input type="text" id="codigoBusca" placeholder="EX: S1, S2...">
-        <button onclick="buscarProduto()">IR</button>
-    </div>
+    <div class="header-logo">WEBGLOBAL<span>67</span></div>
 
-    <div class="links-grid">
-        <a href="#" class="btn shopee" onclick="return false;"><i class="fas fa-shopping-bag"></i> VITRINE DINÂMICA</a>
-    </div>
-</div>
+    <a href="/br" class="nav-btn btn-br">🇧🇷 VITRINE BRASIL</a>
+    <a href="/inter" class="nav-btn btn-inter">🌍 VITRINE INTERNACIONAL</a>
 
-<script>
-    /* 
-       === ÁREA DE DADOS ===
-       Adicione seus produtos aqui no formato "código": "link", 
-       sempre mantendo a vírgula entre as linhas.
-    */
-    const produtos = {
-        "s1": "https://s.shopee.com.br/70HpDRKLTD",
-        "s2": "https://s.shopee.com.br/9fIaQg9Mq8",
-        "s3": "https://s.shopee.com.br/W4LW7RzHZ"
-    };
-
-    function buscarProduto() {
-        let codigo = document.getElementById("codigoBusca").value.trim().toLowerCase();
-        
-        if (produtos[codigo]) {
-            window.location.href = produtos[codigo];
-        } else {
-            alert("Código não encontrado na base de dados!");
-        }
-    }
-</script>
 </body>
 </html>
