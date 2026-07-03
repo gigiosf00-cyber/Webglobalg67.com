@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGlobal67 - Internacional</title>
+    <style>
+        /* Base Mobile-First */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 15px;
+            color: #333;
+        }
+        
+        .header-logo {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .header-logo span { color: #ff5722; } /* Cor destaque estilo Shopee */
+
+        /* Barra de Busca */
+        .search-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            flex-grow: 1;
+            padding: 14px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .search-input:focus {
+            border-color: #ff5722;
+            outline: none;
+        }
+        .search-btn {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 0 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Filtros de Bandeiras */
+        .country-filters {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .filter-btn {
+            flex: 1;
+            padding: 12px 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.2s;
+        }
+        .filter-btn.active {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+        }
+
+        /* Grid de Produtos */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        /* Cartão do Produto */
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+        }
+        .product-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background-color: #eee;
+        }
+        .product-code {
+            color: #ff5722;
+            font-weight: 900;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .product-title {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            line-height: 1.3;
+            color: #444;
+        }
+
+        /* Botão de Compra Único */
+        .buy-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            box-sizing: border-box;
+            background-color: #ff5722;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+    <div class="header-logo">WEBGLOBAL<span>67</span></div>
+
+    <!-- Barra de Busca -->
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="CÓDIGO (EX: US01)">
+        <button class="search-btn">IR</button>
+    </div>
+
+    <!-- Filtros de Região -->
+    <div class="country-filters">
+        <button class="filter-btn active" data-country="all">🌍 TODOS</button>
+        <button class="filter-btn" data-country="us">🇺🇸 EUA</button>
+        <button class="filter-btn" data-country="de">🇩🇪 ALE</button>
+        <button class="filter-btn" data-country="es">🇪🇸 ESP</button>
+    </div>
+
+    <!-- Vitrine de Produtos -->
+    <div class="product-grid" id="productGrid">
+        
+        <!-- PRODUTO EUA -->
+        <div class="product-card" data-code="US01" data-country="us">
+            <img src="https://via.placeholder.com/300x300?text=Foto+Ar+EUA" alt="Produto" class="product-img">
+            <div class="product-code">#US01</div>
+            <div class="product-title">Ar Condicionado Portátil 10.000 BTU - Estoque Local</div>
+            <!-- O link abaixo está com '#' até a aprovação do eBay -->
+            <a href="#" target="_blank" class="buy-btn">COMPRAR NO EBAY</a>
+        </div>
+
+        <!-- PRODUTO ALEMANHA -->
+        <div class="product-card" data-code="DE01" data-country="de">
+            <img src="https://via.placeholder.com/300x300?text=Foto+Vent+ALE" alt="Produto" class="product-img">
+            <div class="product-code">#DE01</div>
+            <div class="product-title">Ventilador de Pescoço USB 5000mAh - Entrega Rápida</div>
+            <a href="#" target="_blank" class="buy-btn">COMPRAR NO EBAY</a>
+        </div>
+
+        <!-- PRODUTO ESPANHA -->
+        <div class="product-card" data-code="ES01" data-country="es">
+            <img src="https://via.placeholder.com/300x300?text=Foto+Manta+ESP" alt="Produto" class="product-img">
+            <div class="product-code">#ES01</div>
+            <div class="product-title">Manta Refrescante de Bambu Casal - Verão</div>
+            <a href="#" target="_blank" class="buy-btn">COMPRAR NO EBAY</a>
+        </div>
+
+    </div>
+
+    <!-- Lógica de Filtro e Busca -->
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.product-card');
+
+        // Função para filtrar por busca e botão simultaneamente
+        function filterProducts() {
+            let searchTerm = searchInput.value.toUpperCase();
+            let activeCountry = document.querySelector('.filter-btn.active').getAttribute('data-country');
+
+            cards.forEach(card => {
+                let code = card.getAttribute('data-code').toUpperCase();
+                let country = card.getAttribute('data-country');
+                
+                let matchesSearch = code.includes(searchTerm);
+                let matchesCountry = (activeCountry === 'all' || country === activeCountry);
+
+                if (matchesSearch && matchesCountry) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Evento de digitação na busca
+        searchInput.addEventListener('input', filterProducts);
+
+        // Evento de clique nas bandeiras
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove classe ativa de todos
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Adiciona no clicado
+                this.classList.add('active');
+                // Roda o filtro
+                filterProducts();
+            });
+        });
+    </script>
+</body>
+</html>
 
