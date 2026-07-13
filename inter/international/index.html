@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webglobal67 | International Showcase</title>
+    <title>Vitality G67 | Wellness & Ageless Lifestyle</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -12,20 +12,34 @@
             background-color: #f8f9fa;
             color: #1a1a1a;
         }
-        header {
-            background-color: #ffffff;
-            padding: 20px;
+
+        /* --- VITALITY G67 HEADER STYLES --- */
+        .vitality-header {
+            background-color: #F9F8F6; 
+            width: 100%;
+            padding: 18px 0;
             text-align: center;
-            border-bottom: 1px solid #eef0f2;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08); 
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
         }
-        header h1 {
-            margin: 0;
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .vitality-brand-name {
+            font-family: 'Playfair Display', 'Times New Roman', serif; 
             font-size: 22px;
-            letter-spacing: 1px;
-            color: #000000;
-            font-weight: 800;
+            font-weight: 700;
+            color: #8C7558; 
+            letter-spacing: 2px; 
+            margin: 0;
+            text-transform: uppercase;
         }
+        /* --------------------------------- */
+
         .container {
             max-width: 600px;
             margin: 30px auto;
@@ -50,11 +64,12 @@
         .product-info {
             padding: 20px;
         }
+        /* Tag atualizada para a cor da marca */
         .product-tag {
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #00bfff;
+            color: #8C7558; 
             font-weight: bold;
             margin-bottom: 8px;
             display: inline-block;
@@ -70,9 +85,10 @@
             line-height: 1.5;
             margin-bottom: 20px;
         }
+        /* Botão atualizado para a cor da marca */
         .view-btn {
             display: block;
-            background-color: #000000;
+            background-color: #8C7558;
             color: #ffffff;
             text-align: center;
             padding: 14px;
@@ -82,9 +98,14 @@
             border-radius: 6px;
             transition: background 0.2s;
         }
-        .view-btn:active {
-            background-color: #333333;
+        .view-btn:hover {
+            background-color: #7a654c;
         }
+        .view-btn:active {
+            background-color: #5c4c39;
+        }
+        
+        /* Rodapé atualizado */
         .footer {
             text-align: center;
             font-size: 13px;
@@ -103,8 +124,10 @@
 </head>
 <body>
 
-    <header>
-        <h1>WEBGLOBAL<span style="color:#ff4500">67</span> INTERNATIONAL</h1>
+    <header class="vitality-header">
+        <div class="header-container">
+            <div class="vitality-brand-name">VITALITY G67</div>
+        </div>
     </header>
 
     <div class="container">
@@ -122,7 +145,7 @@
     </div>
 
     <div class="footer">
-        <p>&copy; 2026 Webglobal67. All Rights Reserved.</p>
+        <p>&copy; 2026 Vitality G67. All Rights Reserved.</p>
         <p>
             <a href="../privacy.html">Privacy Policy</a> | 
             <a href="../terms.html">Terms of Service</a>
