@@ -54,14 +54,61 @@
         h1 { font-size: 26px; color: #000000; line-height: 1.3; text-align: left; margin-bottom: 20px; font-weight: 800; letter-spacing: -0.5px; }
         p { font-size: 17px; margin-bottom: 18px; color: #333333; }
         .highlight { font-weight: bold; color: #000; }
+        
+        .highlight-box {
+            background-color: #fdfbf7;
+            border-left: 4px solid #8C7558;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 16px;
+        }
+        
         .badges { display: flex; justify-content: space-between; margin: 25px 0; text-align: center; font-size: 13px; font-weight: bold; color: #555; }
         .badge-item { flex: 1; }
         .badge-icon { font-size: 24px; display: block; margin-bottom: 5px; }
         
-        .cta-btn { display: block; width: 100%; background-color: #8C7558; color: white; text-align: center; padding: 18px; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 6px; margin-top: 30px; margin-bottom: 15px; box-sizing: border-box; box-shadow: 0 4px 15px rgba(140, 117, 88, 0.4); transition: background-color 0.3s; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .stat-card {
+            background: #fdfbf7;
+            border: 1px solid #f0e6d8;
+            padding: 12px 5px;
+            border-radius: 8px;
+        }
+        .stat-number {
+            font-size: 18px;
+            font-weight: 800;
+            color: #8C7558;
+            display: block;
+        }
+        .stat-label {
+            font-size: 11px;
+            color: #555;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-top: 4px;
+            display: block;
+        }
+
+        .cta-btn { display: block; width: 100%; background-color: #8C7558; color: white; text-align: center; padding: 18px; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 6px; margin-top: 30px; margin-bottom: 10px; box-sizing: border-box; box-shadow: 0 4px 15px rgba(140, 117, 88, 0.4); transition: background-color 0.3s; }
         .cta-btn:hover { background-color: #7a654c; }
         .cta-btn:active { transform: scale(0.98); }
         .sub-cta { display: block; font-size: 14px; font-weight: normal; margin-top: 4px; }
+        
+        .no-sub-tag {
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
         
         .footer { text-align: center; font-size: 11px; color: #999; margin-top: 40px; border-top: 1px solid #eaeaea; padding-top: 20px; }
     </style>
@@ -85,7 +132,9 @@
 
         <p>But there is a third option.</p>
 
-        <p>Meet <span class="highlight">Idrotherapy</span> – the peptide-rich formula that acts as a gentle, yet highly effective alternative to harsh retinol.</p>
+        <div class="highlight-box">
+            <strong>Meet Idrotherapy:</strong> A breakthrough peptide formulation combining <strong>Matrixyl® 3000</strong> and <strong>Renovage®</strong> that acts as a gentle, yet highly effective alternative to harsh retinol for mature skin.
+        </div>
 
         <div class="badges">
             <div class="badge-item"><span class="badge-icon">🇺🇸</span>Made in USA</div>
@@ -96,6 +145,23 @@
 
         <p>What makes it different? It goes on as a rich moisturizer and instantly transforms into a light, non-sticky serum that deeply penetrates your face, neck, décolleté, and even the age spots on your hands.</p>
 
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">Up to 68%</span>
+                <span class="stat-label">Wrinkle Reduction</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">83%</span>
+                <span class="stat-label">Hydration Boost</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">58%</span>
+                <span class="stat-label">Barrier Strength</span>
+            </div>
+        </div>
+
+        <p>Unlike traditional retinol creams that dry out and irritate aging skin barriers, this dual-peptide matrix works at the origin of cellular renewal to plump sagging neck lines, smooth crepey skin, and restore elasticity without any redness or peeling.</p>
+
         <p><span class="highlight">The Best Part? Zero Risk.</span><br>
         You can try Idrotherapy with absolutely no risk. Use the *entire* jar. If it doesn’t increase your skin's elasticity and reduce the appearance of fine lines, you have <strong>365 days</strong> to get your money back.</p>
 
@@ -103,6 +169,8 @@
             GET YOUR RISK-FREE IDROTHERAPY PACKAGE
             <span class="sub-cta">(SAVE UP TO 72% TODAY)</span>
         </a>
+        
+        <span class="no-sub-tag">🔒 One-Time Order • No Hidden Subscriptions</span>
 
         <div class="footer">
             <p>This site is not a part of the YouTube, Pinterest, or Facebook website. Additionally, This site is NOT endorsed by them in any way.</p>
