@@ -3,284 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Skincare Secret for Women Over 45 | Vitality G67</title>
+    <title>Idrotherapy - Wrinkle Reducer & Deep Hydration</title>
     <style>
-        body { 
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f4f4f5; 
-            color: #1a1a1a; 
-            line-height: 1.6; 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        
-        /* --- VITALITY G67 HEADER STYLES --- */
-        .vitality-header {
-            background-color: #F9F8F6; 
-            width: 100%;
-            padding: 15px 0;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+            padding: 15px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e9ecef;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #e6f4ea;
+            color: #137333;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 23px;
+            line-height: 1.3;
+            color: #111111;
+            margin-bottom: 12px;
+            font-weight: 800;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08); 
-            position: sticky; 
-            top: 0;
-            z-index: 1000;
         }
-        .header-container {
+        .subtitle {
+            font-size: 15px;
+            color: #5f6368;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product-img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 12px;
+        }
+        .benefits-list {
+            list-style: none;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+        .benefits-list li {
+            font-size: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #333333;
+        }
+        .benefits-list li span {
+            color: #00a8ff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* BLOCO DE GARANTIA PULSANTE */
+        .guarantee-box {
+            background: #fffdf4;
+            border: 2px solid #e2b13c;
+            border-radius: 12px;
+            padding: 18px 16px;
+            margin: 22px 0;
+            text-align: center;
+            color: #333333;
+        }
+
+        .guarantee-header {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 8px;
+            margin-bottom: 8px;
         }
-        .vg-logo {
-            height: 42px;
-            width: 42px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
-        .vitality-brand-name {
-            font-family: 'Playfair Display', 'Times New Roman', serif; 
-            font-size: 24px;
-            font-weight: 700;
-            color: #8C7558; 
-            letter-spacing: 2px; 
+
+        .guarantee-header h3 {
+            color: #111111;
+            font-size: 15px;
+            font-weight: 800;
             margin: 0;
             text-transform: uppercase;
-        }
-        /* --------------------------------- */
-
-        .container { 
-            max-width: 550px; 
-            margin: 0 auto; 
-            background: #ffffff; 
-            padding: 25px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
-        }
-        .hero-img { 
-            width: 100%; 
-            border-radius: 8px; 
-            margin-bottom: 25px; 
-            display: block; 
-            object-fit: cover; 
-        }
-        h1 { 
-            font-size: 26px; 
-            color: #000000; 
-            line-height: 1.3; 
-            text-align: left; 
-            margin-bottom: 20px; 
-            font-weight: 800; 
-            letter-spacing: -0.5px; 
-        }
-        p { 
-            font-size: 17px; 
-            margin-bottom: 18px; 
-            color: #333333; 
-        }
-        .highlight { 
-            font-weight: bold; 
-            color: #000; 
-        }
-        
-        .highlight-box {
-            background-color: #fdfbf7;
-            border-left: 4px solid #8C7558;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 6px 6px 0;
-            font-size: 16px;
-        }
-        
-        .badges { 
-            display: flex; 
-            justify-content: space-between; 
-            margin: 25px 0; 
-            text-align: center; 
-            font-size: 13px; 
-            font-weight: bold; 
-            color: #555; 
-        }
-        .badge-item { flex: 1; }
-        .badge-icon { 
-            font-size: 24px; 
-            display: block; 
-            margin-bottom: 5px; 
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin: 25px 0;
-            text-align: center;
-        }
-        .stat-card {
-            background: #fdfbf7;
-            border: 1px solid #f0e6d8;
-            padding: 12px 5px;
-            border-radius: 8px;
-        }
-        .stat-number {
-            font-size: 18px;
-            font-weight: 800;
-            color: #8C7558;
-            display: block;
-        }
-        .stat-label {
-            font-size: 11px;
-            color: #555;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-top: 4px;
-            display: block;
+            letter-spacing: 0.3px;
         }
 
-        /* --- SETA INDICADORA ACIMA DO BOTÃO --- */
-        .cta-arrow-pointer {
-            text-align: center;
-            font-size: 26px;
-            color: #8C7558;
-            margin-top: 25px;
-            margin-bottom: -20px;
-            animation: bounce 1.8s infinite;
+        .guarantee-box p {
+            font-size: 13.5px;
+            line-height: 1.45;
+            margin: 0;
+            color: #444444;
         }
 
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(6px); }
-            60% { transform: translateY(3px); }
+        /* ANIMAÇÃO DE PULSAR (PULSE GLOW) */
+        .pulse-animation {
+            animation: pulse-glow 2.2s infinite ease-in-out;
         }
 
-        /* --- BOTÃO COM PULSO SUAVE E PROFISSIONAL --- */
-        .cta-btn { 
-            display: block; 
-            width: 100%; 
-            background-color: #8C7558; 
-            color: white; 
-            text-align: center; 
-            padding: 18px; 
-            text-decoration: none; 
-            font-size: 18px; 
-            font-weight: bold; 
-            border-radius: 6px; 
-            margin-top: 25px; 
-            margin-bottom: 10px; 
-            box-sizing: border-box; 
-            animation: softPulse 2.5s infinite ease-in-out;
-            transition: background-color 0.3s; 
-        }
-
-        @keyframes softPulse {
+        @keyframes pulse-glow {
             0% {
                 transform: scale(1);
-                box-shadow: 0 4px 15px rgba(140, 117, 88, 0.4);
+                box-shadow: 0 0 0 0 rgba(226, 177, 60, 0.4);
             }
             50% {
-                transform: scale(1.02);
-                box-shadow: 0 8px 25px rgba(140, 117, 88, 0.7);
+                transform: scale(1.025);
+                box-shadow: 0 0 18px 6px rgba(226, 177, 60, 0.55);
             }
             100% {
                 transform: scale(1);
-                box-shadow: 0 4px 15px rgba(140, 117, 88, 0.4);
+                box-shadow: 0 0 0 0 rgba(226, 177, 60, 0);
             }
         }
 
-        .cta-btn:hover { background-color: #7a654c; }
-        .cta-btn:active { transform: scale(0.98); }
-        .sub-cta { display: block; font-size: 14px; font-weight: normal; margin-top: 4px; }
-        
-        .no-sub-tag {
+        /* BOTÃO CTA PRINCIPAL */
+        .btn-cta {
             display: block;
+            width: 100%;
+            background-color: #00a8ff;
+            color: #ffffff;
+            text-decoration: none;
             text-align: center;
-            font-size: 13px;
-            color: #666;
-            font-weight: bold;
-            margin-bottom: 25px;
+            padding: 16px 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 14px rgba(0, 168, 255, 0.4);
+            transition: all 0.2s ease;
         }
-        
-        .footer { 
-            text-align: center; 
-            font-size: 11px; 
-            color: #999; 
-            margin-top: 40px; 
-            border-top: 1px solid #eaeaea; 
-            padding-top: 20px; 
+
+        .btn-cta:hover, .btn-cta:active {
+            background-color: #008cdb;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 168, 255, 0.5);
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 11px;
+            color: #888888;
+            line-height: 1.5;
+        }
+        footer a {
+            color: #666666;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <header class="vitality-header">
-        <div class="header-container">
-            <img src="../img/vg-logo.png" alt="Logótipo Vitality G67" class="vg-logo">
-            <div class="vitality-brand-name">VITALITY G67</div>
-        </div>
-    </header>
-
     <div class="container">
+        <div style="text-align: center;">
+            <span class="badge">Official Special Offer</span>
+        </div>
+
+        <h1>POV: You Finally Fixed Your Dull & Aging Skin</h1>
         
-        <img src="../skincare2.jpeg" alt="Premium Skincare Routine" class="hero-img">
+        <p class="subtitle">Discover how Idrotherapy deeply hydrates, targets deep wrinkles, and restores that youthful, radiant glow.</p>
 
-        <h1>Why Women Over 45 Are Abandoning Retinol For This "Moisturizer-to-Serum" Secret</h1>
+        <ul class="benefits-list">
+            <li><span>✓</span> Deep cellular hydration tailored for mature skin</li>
+            <li><span>✓</span> Targets fine lines & visibly smooths deep wrinkles</li>
+            <li><span>✓</span> Restores natural skin elasticity and youthful radiance</li>
+            <li><span>✓</span> Fast-absorbing, non-greasy luxury formula</li>
+        </ul>
 
-        <p>If you're over 45, you've probably noticed that traditional skincare routines are no longer cutting it. You have two choices: spend a fortune on "big fashion" designer labels that just slap their name on generic items, or risk your skin with cheap Amazon knock-offs made in China.</p>
-
-        <p>But there is a third option.</p>
-
-        <div class="highlight-box">
-            <strong>Meet Idrotherapy:</strong> A breakthrough peptide formulation combining <strong>Matrixyl® 3000</strong> and <strong>Renovage®</strong> that acts as a gentle, yet highly effective alternative to harsh retinol for mature skin.
-        </div>
-
-        <div class="badges">
-            <div class="badge-item"><span class="badge-icon">🇺🇸</span>Made in USA</div>
-            <div class="badge-item"><span class="badge-icon">💧</span>Fragrance-Free</div>
-            <div class="badge-item"><span class="badge-icon">🌱</span>Paraben-Free</div>
-            <div class="badge-item"><span class="badge-icon">🐰</span>Cruelty-Free</div>
-        </div>
-
-        <p>What makes it different? It goes on as a rich moisturizer and instantly transforms into a light, non-sticky serum that deeply penetrates your face, neck, décolleté, and even the age spots on your hands.</p>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <span class="stat-number">Up to 68%</span>
-                <span class="stat-label">Wrinkle Reduction</span>
+        <div class="guarantee-box pulse-animation">
+            <div class="guarantee-header">
+                <span style="font-size: 20px;">🛡️</span>
+                <h3>365-DAY MONEY-BACK GUARANTEE</h3>
             </div>
-            <div class="stat-card">
-                <span class="stat-number">83%</span>
-                <span class="stat-label">Hydration Boost</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number">58%</span>
-                <span class="stat-label">Barrier Strength</span>
-            </div>
-        </div>
-
-        <p>Unlike traditional retinol creams that dry out and irritate aging skin barriers, this dual-peptide matrix works at the origin of cellular renewal to plump sagging neck lines, smooth crepey skin, and restore elasticity without any redness or peeling.</p>
-
-        <p><span class="highlight">The Best Part? Zero Risk.</span><br>
-        You can try Idrotherapy with absolutely no risk. Use the *entire* jar. If it doesn’t increase your skin's elasticity and reduce the appearance of fine lines, you have <strong>365 days</strong> to get your money back.</p>
-
-        <!-- SETA APONTANDO PARA O BOTÃO -->
-        <div class="cta-arrow-pointer">▼</div>
-
-        <a href="https://e-idrotherapylove.com/#aff=Jovas67" class="cta-btn">
-            GET YOUR RISK-FREE IDROTHERAPY PACKAGE &nbsp;➔
-            <span class="sub-cta">(SAVE UP TO 72% TODAY)</span>
-        </a>
-        
-        <span class="no-sub-tag">🔒 One-Time Order • No Hidden Subscriptions</span>
-
-        <div class="footer">
-            <p>This site is not a part of the YouTube, Pinterest, or Facebook website. Additionally, This site is NOT endorsed by them in any way.</p>
-            <p>&copy; 2026 Vitality G67. All Rights Reserved.</p>
-            
-            <p style="margin-top: 15px; font-size: 13px;">
-                <a href="../privacy.html" style="color: #999; text-decoration: none;">Privacy Policy</a> | 
-                <a href="../terms.html" style="color: #999; text-decoration: none;">Terms of Service</a>
-            </p>
-        </div>
-
-    </div>
-
-</body>
-</html>
+            <p>
+                Try <strong>Idrotherapy</strong> 100
